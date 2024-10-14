@@ -253,7 +253,7 @@ jobs:
         private-key: ${{ secrets.RENOVATE_APP_PRIVATE_KEY }}
     - continue-on-error: true
       name: Checkout
-      uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b
+      uses: actions/checkout@eef61447b9ff4aafe5dcd4e0bbf5d482be7e7871
     - continue-on-error: true
       env:
         LOG_LEVEL: debug
