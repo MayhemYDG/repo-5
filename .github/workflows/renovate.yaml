@@ -247,7 +247,7 @@ jobs:
     - continue-on-error: true
       id: get_token
       name: Get token
-      uses: actions/create-github-app-token@a0de6af83968303c8c955486bf9739a57d23c7f1
+      uses: actions/create-github-app-token@5d869da34e18e7287c1daad50e0b8ea0f506ce69
       with:
         app-id: ${{ vars.RENOVATE_APP_ID }}
         private-key: ${{ secrets.RENOVATE_APP_PRIVATE_KEY }}
