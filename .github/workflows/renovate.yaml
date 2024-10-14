@@ -259,7 +259,7 @@ jobs:
         LOG_LEVEL: debug
         RENOVATE_REPOSITORIES: ${{ github.repository }}
       name: Self-hosted Renovate
-      uses: renovatebot/github-action@063e0c946b9c1af35ef3450efc44114925d6e8e6
+      uses: renovatebot/github-action@7743ec9e19ceeb61a3862c5d4131e6710195af11
       with:
         configurationFile: .github/configs/renovate-config.js
         renovate-version: 37.332.0
