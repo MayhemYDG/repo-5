@@ -253,7 +253,7 @@ jobs:
     - continue-on-error: true
       id: changed-files
       name: Check if Helm Chart related files changed
-      uses: tj-actions/changed-files@v44
+      uses: tj-actions/changed-files@v45
       with:
         files: 'deploy/helm/sumologic/**/*
 
@@ -794,7 +794,7 @@ jobs:
     - continue-on-error: true
       id: changed-files
       name: Check if documentation related files changed
-      uses: tj-actions/changed-files@v44
+      uses: tj-actions/changed-files@v45
       with:
         files: '**/*.md
 
