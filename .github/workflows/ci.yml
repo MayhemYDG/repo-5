@@ -297,7 +297,7 @@ jobs:
       uses: ramsey/composer-install@2.2.0
     - continue-on-error: true
       name: Set up WordPress and WordPress Test Library
-      uses: sjinks/setup-wordpress-test-library@1.1.14
+      uses: sjinks/setup-wordpress-test-library@v2.1.1
       with:
         version: ${{ matrix.config.wp }}
     - continue-on-error: true
