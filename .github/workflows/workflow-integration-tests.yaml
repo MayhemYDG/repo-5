@@ -1065,7 +1065,7 @@ jobs:
         go-version: '1.22'
     - continue-on-error: true
       name: golangci-lint
-      uses: golangci/golangci-lint-action@v4
+      uses: golangci/golangci-lint-action@v6
       with:
         args: --timeout=10m --verbose
         version: v1.57.1
