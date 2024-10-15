@@ -249,7 +249,7 @@ jobs:
       with:
         ref: ${{ github.event.pull_request.head.ref }}
     - continue-on-error: true
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v5
     - continue-on-error: true
       run: 'echo "Execute tests here"
 
