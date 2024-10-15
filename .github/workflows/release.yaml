@@ -249,7 +249,7 @@ jobs:
       with:
         fetch-depth: 0
     - continue-on-error: true
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v4
     - continue-on-error: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
