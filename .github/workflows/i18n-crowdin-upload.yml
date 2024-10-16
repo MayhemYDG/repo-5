@@ -252,7 +252,7 @@ jobs:
         CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
         CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
       name: Upload sources
-      uses: crowdin/github-action@v1
+      uses: crowdin/github-action@v2
       with:
         base_url: https://grafana.api.crowdin.com
         config: crowdin.yml
