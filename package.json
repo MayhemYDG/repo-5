@@ -28,7 +28,7 @@
     "license": "MIT",
     "dependencies": {
         "@google-cloud/storage": "7.7.0",
-        "@supercharge/promise-pool": "1.7.0",
+        "@supercharge/promise-pool": "3.2.0",
         "chalk": "4.1.1",
         "fs-readdir-recursive": "1.1.0",
         "text-table": "0.2.0",
