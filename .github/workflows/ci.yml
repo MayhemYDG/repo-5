@@ -511,7 +511,7 @@ jobs:
     - continue-on-error: true
       id: glob
       name: Glob match
-      uses: tj-actions/glob@v17
+      uses: tj-actions/glob@v22
       with:
         files: '**/generated/*.proto
 
