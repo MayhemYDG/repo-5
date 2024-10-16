@@ -443,7 +443,7 @@ jobs:
         \ $api_res\n  exit 1\nfi\n"
     - continue-on-error: true
       name: store build artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: build-artifacts
         path: ${{ steps.get_dir.outputs.dir }}/ci/packages/*.zip
