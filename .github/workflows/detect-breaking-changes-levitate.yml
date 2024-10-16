@@ -275,7 +275,7 @@ jobs:
     - continue-on-error: true
       id: job
       name: Get link for the Github Action job
-      uses: actions/github-script@v6
+      uses: actions/github-script@v7
       with:
         script: 'const name = ''Detect breaking changes'';
 
@@ -573,7 +573,7 @@ jobs:
     - continue-on-error: true
       id: levitate-run
       name: Parsing levitate result
-      uses: actions/github-script@v6
+      uses: actions/github-script@v7
       with:
         script: 'const filePath = ''result.json'';
 
@@ -587,7 +587,7 @@ jobs:
         PR_NUMBER: ${{ github.event.pull_request.number }}
       id: does-label-exist
       name: Check if "levitate breaking change" label exists
-      uses: actions/github-script@v6
+      uses: actions/github-script@v7
       with:
         script: "const { data } = await github.rest.issues.listLabelsOnIssue({\n \
           \ issue_number: process.env.PR_NUMBER,\n  owner: context.repo.owner,\n \
@@ -643,7 +643,7 @@ jobs:
       if: steps.levitate-run.outputs.exit_code == 1 && steps.does-label-exist.outputs.result
         == 0
       name: Add "levitate breaking change" label
-      uses: actions/github-script@v6
+      uses: actions/github-script@v7
       with:
         github-token: ${{ steps.generate_token.outputs.token }}
         script: "await github.rest.issues.addLabels({\n  issue_number: process.env.PR_NUMBER,\n\
@@ -655,7 +655,7 @@ jobs:
       if: steps.levitate-run.outputs.exit_code == 0 && steps.does-label-exist.outputs.result
         == 1
       name: Remove "levitate breaking change" label
-      uses: actions/github-script@v6
+      uses: actions/github-script@v7
       with:
         github-token: ${{ steps.generate_token.outputs.token }}
         script: "await github.rest.issues.removeLabel({\n  issue_number: process.env.PR_NUMBER,\n\
@@ -666,7 +666,7 @@ jobs:
         PR_NUMBER: ${{ steps.levitate-run.outputs.pr_number }}
       if: steps.levitate-run.outputs.exit_code == 1
       name: Add "grafana/plugins-platform-frontend" as a reviewer
-      uses: actions/github-script@v6
+      uses: actions/github-script@v7
       with:
         github-token: ${{ steps.generate_token.outputs.token }}
         script: "await github.rest.pulls.requestReviewers({\n  pull_number: process.env.PR_NUMBER,\n\
@@ -677,7 +677,7 @@ jobs:
         PR_NUMBER: ${{ steps.levitate-run.outputs.pr_number }}
       if: steps.levitate-run.outputs.exit_code == 0
       name: Remove "grafana/plugins-platform-frontend" from the list of reviewers
-      uses: actions/github-script@v6
+      uses: actions/github-script@v7
       with:
         github-token: ${{ steps.generate_token.outputs.token }}
         script: "await github.rest.pulls.removeRequestedReviewers({\n  pull_number:\
