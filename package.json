@@ -45,7 +45,7 @@
   "dependencies": {
     "axios": "^1.6.0",
     "core-js": "^3.32.1",
-    "js-base64": "2.6.4",
+    "js-base64": "3.7.7",
     "lodash": "^4.17.20",
     "qrcode-svg": "^1.0.0",
     "svg.js": "^2.7.1",
