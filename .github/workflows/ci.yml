@@ -505,7 +505,7 @@ jobs:
     - continue-on-error: true
       uses: actions/checkout@v4
     - continue-on-error: true
-      uses: Swatinem/rust-cache@3cf7f8cc28d1b4e7d01e3783be10a97d55d483c8
+      uses: Swatinem/rust-cache@82a92a6e8fbeee089604da2575dc567ae9ddeaab
     - continue-on-error: true
       run: cargo install --version 0.10.0 pb-rs --locked
     - continue-on-error: true
@@ -783,7 +783,7 @@ jobs:
     - continue-on-error: true
       uses: r7kamura/rust-problem-matchers@2c2f1016021a7455a6b5b4bbae31145f3b3cd83a
     - continue-on-error: true
-      uses: Swatinem/rust-cache@3cf7f8cc28d1b4e7d01e3783be10a97d55d483c8
+      uses: Swatinem/rust-cache@82a92a6e8fbeee089604da2575dc567ae9ddeaab
       with:
         save-if: ${{ github.ref == 'refs/heads/master' }}
     - continue-on-error: true
@@ -1046,7 +1046,7 @@ jobs:
     - continue-on-error: true
       uses: r7kamura/rust-problem-matchers@2c2f1016021a7455a6b5b4bbae31145f3b3cd83a
     - continue-on-error: true
-      uses: Swatinem/rust-cache@3cf7f8cc28d1b4e7d01e3783be10a97d55d483c8
+      uses: Swatinem/rust-cache@82a92a6e8fbeee089604da2575dc567ae9ddeaab
       with:
         save-if: ${{ github.ref == 'refs/heads/master' }}
     - continue-on-error: true
@@ -1306,7 +1306,7 @@ jobs:
     - continue-on-error: true
       uses: actions/checkout@v4
     - continue-on-error: true
-      uses: Swatinem/rust-cache@3cf7f8cc28d1b4e7d01e3783be10a97d55d483c8
+      uses: Swatinem/rust-cache@82a92a6e8fbeee089604da2575dc567ae9ddeaab
     - continue-on-error: true
       run: cargo metadata --locked --format-version=1 > /dev/null
     - name: after
@@ -1562,7 +1562,7 @@ jobs:
     - continue-on-error: true
       uses: r7kamura/rust-problem-matchers@2c2f1016021a7455a6b5b4bbae31145f3b3cd83a
     - continue-on-error: true
-      uses: Swatinem/rust-cache@3cf7f8cc28d1b4e7d01e3783be10a97d55d483c8
+      uses: Swatinem/rust-cache@82a92a6e8fbeee089604da2575dc567ae9ddeaab
       with:
         save-if: false
         shared-key: stable-cache
@@ -1835,7 +1835,7 @@ jobs:
     - continue-on-error: true
       uses: r7kamura/rust-problem-matchers@2c2f1016021a7455a6b5b4bbae31145f3b3cd83a
     - continue-on-error: true
-      uses: Swatinem/rust-cache@3cf7f8cc28d1b4e7d01e3783be10a97d55d483c8
+      uses: Swatinem/rust-cache@82a92a6e8fbeee089604da2575dc567ae9ddeaab
       with:
         key: ${{ matrix.features }}
         save-if: ${{ github.ref == 'refs/heads/master' }}
@@ -2360,7 +2360,7 @@ jobs:
     - continue-on-error: true
       uses: r7kamura/rust-problem-matchers@2c2f1016021a7455a6b5b4bbae31145f3b3cd83a
     - continue-on-error: true
-      uses: Swatinem/rust-cache@3cf7f8cc28d1b4e7d01e3783be10a97d55d483c8
+      uses: Swatinem/rust-cache@82a92a6e8fbeee089604da2575dc567ae9ddeaab
       with:
         save-if: ${{ github.ref == 'refs/heads/master' }}
     - continue-on-error: true
@@ -2905,7 +2905,7 @@ jobs:
     - continue-on-error: true
       uses: r7kamura/rust-problem-matchers@2c2f1016021a7455a6b5b4bbae31145f3b3cd83a
     - continue-on-error: true
-      uses: Swatinem/rust-cache@3cf7f8cc28d1b4e7d01e3783be10a97d55d483c8
+      uses: Swatinem/rust-cache@82a92a6e8fbeee089604da2575dc567ae9ddeaab
       with:
         save-if: ${{ github.ref == 'refs/heads/master' }}
     - continue-on-error: true
