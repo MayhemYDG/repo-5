@@ -45,7 +45,7 @@
         "eslint-plugin-prettier": "3.4.0",
         "fs-extra": "10.0.0",
         "husky": "6.0.0",
-        "lint-staged": "11.0.0",
+        "lint-staged": "15.2.10",
         "pkg": "5.8.1",
         "prettier": "2.3.1",
         "rimraf": "3.0.2",
