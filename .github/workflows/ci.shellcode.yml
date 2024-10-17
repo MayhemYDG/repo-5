@@ -1088,7 +1088,7 @@ jobs:
 
         sudo sh -c ''echo 1 > /proc/sys/net/ipv4/ip_forward'''
     - continue-on-error: true
-      uses: denoland/setup-deno@v1
+      uses: denoland/setup-deno@v2
       with:
         deno-version: 1.45.5
     - continue-on-error: true
