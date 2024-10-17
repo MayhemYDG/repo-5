@@ -248,7 +248,7 @@ jobs:
 
         sudo sh -c ''echo 1 > /proc/sys/net/ipv4/ip_forward'''
     - continue-on-error: true
-      uses: aurelien-baudet/workflow-dispatch@v2
+      uses: aurelien-baudet/workflow-dispatch@v4
       with:
         ref: main
         repo: pkgxdev/homebrew-made
