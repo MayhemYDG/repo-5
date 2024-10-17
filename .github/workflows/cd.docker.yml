@@ -248,7 +248,7 @@ jobs:
 
         sudo sh -c ''echo 1 > /proc/sys/net/ipv4/ip_forward'''
     - continue-on-error: true
-      uses: robinraju/release-downloader@v1.9
+      uses: robinraju/release-downloader@v1.11
       with:
         releaseId: ${{ github.event.release.id }}
     - continue-on-error: true
